@@ -18,6 +18,15 @@ $ yarn global add hifumi
 $ hifumi download <url>
 ```
 
+#### Normally
+```js
+const Hifumi = require('hifumi');
+const downloader = new Hifumi.Downloader('url');
+
+const path = downloader.download();
+console.log(await path);
+```
+
 ## License
 > [Hifumi](https://github.com/auguwu/Hifumi) is made by auguwu & released under the MIT license.
 
